@@ -20,7 +20,7 @@ apt-get install libxml-simple-perl liblog-log4perl-perl libdbd-mysql-perl
 ## Setup
 Download and save money :P.
 ```
-wget -c https://raw.githubusercontent.com/cainelli/zimbra-utils/master/zopenhsm/bin/zopenhsm.pl
+wget -c https://raw.githubusercontent.com/cainelli/zopenhsm/master/bin/zopenhsm.pl 
 mv zopenhsm.pl /usr/local/bin/
 chmod +x /usr/local/bin/zopenhsm.pl
 ```
