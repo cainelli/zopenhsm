@@ -41,7 +41,7 @@ if ( ! ($src_vol && $dst_vol))
     &help;
 }
 
-$logger->info("Getting ZimbrHsmAge...");
+$logger->info("Getting zimbraHsmAge...");
 my $hsmage = `/opt/zimbra/bin/zmprov getserver \`/opt/zimbra/bin/zmhostname\` | grep zimbraHsmAge | cut -d\\  -f2`;
 
 # default hsm age is 7d.
@@ -51,7 +51,7 @@ if ( ! $hsmage )
 }
 
 
-$logger->info("ZimbrHsmAge=$hsmage");
+$logger->info("zimbraHsmAge=$hsmage");
 
 my $localconfig = '/opt/zimbra/conf/localconfig.xml';
 my $xml = new XML::Simple;
