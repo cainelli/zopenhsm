@@ -118,7 +118,7 @@ for my $group ( keys(%mailboxes) )
         WHERE mailbox_id='$mailbox' AND 
             type = 5 AND 
             locator = $src_vol_id AND
-            date > $query_time";        
+            date < $query_time";        
     my $query = $dbh->prepare($str_query);
     $query->execute;
 
