@@ -17,6 +17,11 @@ apt-get update
 apt-get install libxml-simple-perl liblog-log4perl-perl libdbd-mysql-perl
 ```
 
+For CentOS 7
+```
+yum install perl-XML-Simple.noarch perl-Log-Log4perl
+```
+
 ## Setup
 Download and save money :P.
 ```
