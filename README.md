@@ -1,6 +1,4 @@
-# zopenhsm (BETA)
-
-NOT FULLY TESTED! USE AT YOUR OWN RISK! YOU MAY WANT RUN ON INTERATIVE MODE(-i) THE FIRST TIME!
+# zopenhsm
 
 Zimbra HSM is a great feature on Zimbra Network Edition which helps administratros reduce significantly storage costs and still offer large mailboxes to its users.
 This tool brings the HSM feature only available in Zimbra Network Edition to Zimbra Open Source Edition.
