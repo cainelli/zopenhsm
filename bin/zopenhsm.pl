@@ -112,7 +112,7 @@ for my $group ( keys(%mailboxes) )
     {
     my $query_time = time - $hsmage;
     my $str_query="SELECT id,
-        CONCAT('locator:',locator,':/', (mailbox_id >> 12), '/', mailbox_id, '/msg/', (id >> 12), '/') AS path,
+        CONCAT('locator:',locator,':/', (mailbox_id >> 12), '/', mailbox_id, '/msg/', (id % (1024*1024) >> 12), '/') AS path,
         CONCAT( id, '-', mod_content, '.msg' ) AS file 
         FROM mail_item 
         WHERE mailbox_id='$mailbox' AND 
